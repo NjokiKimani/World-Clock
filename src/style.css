@@ -17,14 +17,14 @@ body {
 }
 
 h1,
-.day {
+.displayDay {
   text-align: center;
 }
 h1 {
   font-size: 50px;
   margin-bottom: 0px;
 }
-.day {
+.displayDay {
   font-size: 18px;
   opacity: 0.7;
   position: relative;
@@ -41,7 +41,7 @@ select{
 .cities{
     margin: 0 40px;
 }
-.losAngeles, .newYork, .nairobi{
+#cityContainer{
     display: flex;
     justify-content: space-between;
 }
@@ -49,12 +49,12 @@ h4{
     font-size: larger;
     margin-top: 0;
 }
-.cityDay{
+#day{
     font-size: 16px;
     font-weight: normal;
     opacity: 0.7;
 }
-.losAngelesTime, .newYorkTime, .nairobiTime{
+#time{
     font-weight: 600;
     font-size: 25px;
     opacity: 0.8;
