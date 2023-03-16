@@ -9,8 +9,8 @@
   </head>
   <body>
     <div class="container">
-    <div class="worldMapImg">
-      <img src="img/world map.png" alt="World Map" />
+    <div id="mapImage" >
+      <img src="img/world map.png" alt="World Map" class="worldMapImg"/>
     </div>
     <div class="displayTime">
       <h1 id="displayTime">16:32:24</h1>
@@ -23,18 +23,31 @@
       <option value="">Tokyo</option>
     </select>
     <div class="cities">
-        <div class="losAngeles">Los Angeles
-<div class="losAngelesTime">6:32</div>
+        <div class="losAngeles">
+            <h4>Los Angeles
+                <div class="cityDay">05/04/2020</div>
+            </h4>
+<div class="losAngelesTime">6:32<small>AM</small></div>
         </div>
-           <div class="newYork">New York
-<div class="newYorkTime">9:32</div>
+           <div class="newYork">
+            <h4>
+New York
+  <div class="cityDay">05/04/2020</div>
+            </h4>
+<div class="newYorkTime">9:32<small>AM</small></div>
         </div>
-           <div class="nairobi">Nairobi
-<div class="nairobiTime">16:32</div>
+           <div class="nairobi">
+            <h4>
+                Nairobi
+                 <div class="cityDay">05/04/2020</div> 
+            </h4>
+<div class="nairobiTime">16:32<small>AM</small></div>
         </div>
-    </div>
+                </div>
+                        </div>
+    <footer>
     This project was coded by Njoki Kimani and is <a href="https://github.com/NjokiKimani/World-Clock"target="_blank">open sourced on Github</a>
-    </div>
+</footer>
     <script src="src/app.js"></script>
   </body>
 </html>
