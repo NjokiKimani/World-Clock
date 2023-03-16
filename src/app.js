@@ -1,5 +1,17 @@
 
-
+function updateHeader(){
+    let headerTimeElement = document.querySelector("#displayTime");
+    let headerDayElement = document.querySelector(".displayDay");
+    let currentTimeZoneElement = moment.tz.guess();
+    headerTimeElement.innerHTML = moment()
+      .tz(currentTimeZoneElement)
+      .format("H:mm:ss").toUpperCase();
+      headerDayElement.innerHTML = moment()
+        .tz(currentTimeZoneElement)
+        .format("ddd, MMMM Do YYYY");   
+}
+updateHeader();
+setInterval(updateHeader, 1000);
 
 function updateCity(event){
           let cityTZElement = event.target.value;
